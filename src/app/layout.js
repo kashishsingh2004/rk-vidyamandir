@@ -2,8 +2,8 @@ import "./globals.css";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Late R. K. Vidyamandir, Ruhellapur",
-  description: "Established in 2000 by Chand Sir",
+  title: "Late Ramkali Vidya mandir junior highschool, Ruhellapur",
+  description: "Established in 2000 by Chand Sir (UDISE Code-09421306803)",
 };
 
 export default function RootLayout({ children }) {
@@ -13,8 +13,8 @@ export default function RootLayout({ children }) {
         <header className="site-header">
           <img src="/logo.png" alt="School Logo" className="site-logo" />
           <div>
-            <h1>Late R. K. Vidyamandir, Ruhellapur</h1>
-            <p>Established in 2000 by Chand Sir</p>
+            <h1>Late Ramkali Vidya mandir junior highschool, Ruhellapur</h1>
+            <p>Established in 2000 by Chand Sir (UDISE Code-09421306803),</p>
           </div>
         </header>
         <nav>
