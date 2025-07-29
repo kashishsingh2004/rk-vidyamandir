@@ -2,7 +2,7 @@ import "./globals.css";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Late R. K. Vidyamandir, Ruhellapur",
+  title: "Late R. K. Vidyamandir, Ruhellapur",
   description: "Established in 2000 by Chand Sir",
 };
 
@@ -10,9 +10,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <header>
-          <h1>Late R. K. Vidyamandir, Ruhellapur</h1>
-          <p>Established in 2000 by Chand Sir</p>
+        <header className="site-header">
+          <img src="/logo.png" alt="School Logo" className="site-logo" />
+          <div>
+            <h1>Late R. K. Vidyamandir, Ruhellapur</h1>
+            <p>Established in 2000 by Chand Sir</p>
+          </div>
         </header>
         <nav>
           <Link href="/">Home</Link>
