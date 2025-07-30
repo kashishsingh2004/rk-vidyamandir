@@ -107,6 +107,22 @@ nav a:hover {
   border-bottom-color: #ffd700;
   transform: translateY(-2px);
 }
+/* Extra styles to fix nav on mobile */
+.nav-scroll {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.nav-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.nav-container a {
+  flex: 0 0 auto;
+}
+
 
 /* Main Content */
 main {
