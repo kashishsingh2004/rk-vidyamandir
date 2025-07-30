@@ -48,21 +48,31 @@ export default function TeachersPage() {
 
   return (
     <div className="container">
-      {/* Faculty Intro */}
       <section className="section">
         <h2>Our Dedicated Faculty</h2>
-        <p className="section-intro">
+        <p
+          style={{
+            textAlign: "center",
+            maxWidth: "800px",
+            margin: "0 auto",
+            fontSize: "1.1rem",
+            color: "#666",
+          }}
+        >
           Our experienced and passionate teachers are the backbone of our
-          educational excellence. They are committed to nurturing each student's
-          potential and providing personalized attention to ensure comprehensive
-          development.
+          educational excellence. They are committed to nurturing each
+          student&apos;s potential and providing personalized attention to
+          ensure comprehensive development.
         </p>
       </section>
 
-      {/* Principal Message */}
-      <section className="section white-bg">
+      {/* Principal Section */}
+      <section
+        className="section"
+        style={{ background: "white", padding: "60px 20px", margin: "40px 0" }}
+      >
         <h2>Principal&apos;s Message</h2>
-        <div className="grid grid-2 align-center">
+        <div className="grid grid-2" style={{ alignItems: "center" }}>
           <div className="teacher-card">
             <img
               src="/teacher1.jpg"
@@ -96,7 +106,7 @@ export default function TeachersPage() {
         </div>
       </section>
 
-      {/* Teachers Grid */}
+      {/* Faculty Grid */}
       <section className="section">
         <h2>Meet Our Teachers</h2>
         <div className="grid grid-3">
@@ -113,7 +123,9 @@ export default function TeachersPage() {
                   <strong>{teacher.subject}</strong>
                 </p>
                 <p>{teacher.qualification}</p>
-                <p className="experience">{teacher.experience}</p>
+                <p style={{ color: "#3498db", fontWeight: "500" }}>
+                  {teacher.experience}
+                </p>
               </div>
             </div>
           ))}
@@ -121,68 +133,78 @@ export default function TeachersPage() {
       </section>
 
       {/* Teaching Philosophy */}
-      <section className="section white-bg">
+      <section
+        className="section"
+        style={{ background: "white", padding: "60px 20px", margin: "40px 0" }}
+      >
         <h2>Our Teaching Philosophy</h2>
         <div className="grid grid-3">
           <div className="info-card">
             <h3>🎯 Student-Centered Learning</h3>
             <p>
               We focus on individual learning styles and adapt our teaching
-              methods to suit each student&apos;s needs.
+              methods to suit each student&apos;s needs, ensuring that no child
+              is left behind.
             </p>
           </div>
           <div className="info-card">
             <h3>🌱 Holistic Development</h3>
             <p>
-              Our approach includes physical, emotional, and social development
-              to prepare students for all aspects of life.
+              Our approach goes beyond academics to include physical, emotional,
+              and social development, preparing students for all aspects of
+              life.
             </p>
           </div>
           <div className="info-card">
             <h3>💡 Innovation in Teaching</h3>
             <p>
-              We continuously update our methods using modern techniques and
-              technology to enhance learning.
+              We continuously update our teaching methods, incorporating modern
+              techniques and technology to make learning more effective and
+              engaging.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Achievements */}
+      {/* Faculty Achievements */}
       <section className="section">
         <h2>Faculty Achievements</h2>
         <div className="grid grid-2">
           <div className="info-card">
             <h3>Recognition &amp; Awards</h3>
-            <ul className="list">
+            <ul style={{ textAlign: "left", lineHeight: "2" }}>
               <li>Best Teacher Awards at district level</li>
-              <li>Innovative teaching recognitions</li>
-              <li>Published papers in education journals</li>
-              <li>Participation in training programs</li>
+              <li>Recognition for innovative teaching methods</li>
+              <li>Published research papers in education journals</li>
+              <li>Active participation in teacher training programs</li>
             </ul>
           </div>
           <div className="info-card">
             <h3>Professional Development</h3>
-            <ul className="list">
-              <li>Regular workshops and seminars</li>
-              <li>Certified in modern methodologies</li>
-              <li>Technology-integrated teaching</li>
-              <li>Continual skill enhancement</li>
+            <ul style={{ textAlign: "left", lineHeight: "2" }}>
+              <li>Regular workshops and seminars attendance</li>
+              <li>Certification in modern teaching methodologies</li>
+              <li>Computer literacy and technology integration</li>
+              <li>Continuous learning and skill enhancement</li>
             </ul>
           </div>
         </div>
       </section>
 
-      {/* Join Us */}
-      <section className="section white-bg">
+      {/* Join Our Team */}
+      <section
+        className="section"
+        style={{ background: "white", padding: "60px 20px", margin: "40px 0" }}
+      >
         <h2>Join Our Teaching Family</h2>
         <div
-          className="info-card text-center"
-          style={{ maxWidth: "800px", margin: "0 auto" }}
+          className="info-card"
+          style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}
         >
           <p style={{ fontSize: "1.1rem", marginBottom: "20px" }}>
-            Are you a passionate educator looking to make a difference? Join our
-            team and help shape the future.
+            Are you a passionate educator looking to make a difference? We are
+            always looking for dedicated teachers who share our vision of
+            quality education and student development.
           </p>
           <a href="/contact" className="btn">
             Get in Touch
