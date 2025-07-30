@@ -1,0 +1,22 @@
+/* app/styles/header.css */
+.site-header {
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+}
+.site-logo {
+  width: 80px;
+  margin-right: 20px;
+}
+.header-text h1 {
+  margin: 0;
+  font-size: 24px;
+}
+.header-text p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
