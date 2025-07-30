@@ -1,3 +1,7 @@
+"use client";
+import Image from "next/image";
+import React from "react";
+
 export default function GalleryPage() {
   const galleryItems = [
     {
@@ -140,7 +144,13 @@ export default function GalleryPage() {
         <div className="gallery-grid">
           {galleryItems.map((item, index) => (
             <div key={index} className="gallery-item">
-              <img src={item.image} alt={item.title} />
+              <Image
+                src={item.image}
+                alt={item.title}
+                width={400}
+                height={300}
+                className="gallery-image"
+              />
               <div className="gallery-overlay">
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>

@@ -1,3 +1,5 @@
+"use client";
+import Image from "next/image";
 import "./page.module.css";
 
 export default function HomePage() {
@@ -5,10 +7,12 @@ export default function HomePage() {
     <div className="hero-container">
       {/* Hero Section */}
       <div className="hero">
-        <img
+        <Image
           src="/school-banner.jpg"
           alt="Late R.K. Vidyamandir School"
           className="banner"
+          width={1200}
+          height={400}
         />
       </div>
 
@@ -67,27 +71,29 @@ export default function HomePage() {
         <h2>From the Desk of Our Management</h2>
         <div className="grid grid-2" style={{ alignItems: "center" }}>
           <div className="manager-photo">
-            <img
+            <Image
               src="/teacher1.jpg"
               alt="Manager Sir"
               className="sketch-photo"
+              width={300}
+              height={300}
             />
             <p>
-              <strong>Mr. Anshuman singh </strong>
+              <strong>Mr. Anshuman Singh</strong>
               <br />
               School Principal
             </p>
           </div>
           <div className="info-card">
             <p>
-              “Education is not just about learning facts, but about nurturing
-              curiosity and building character. At RK Vidyamandir, we strive to
-              prepare our students for the real world through a blend of
-              discipline, knowledge, and human values.”
+              &ldquo;Education is not just about learning facts, but about
+              nurturing curiosity and building character. At RK Vidyamandir, we
+              strive to prepare our students for the real world through a blend
+              of discipline, knowledge, and human values.&rdquo;
             </p>
             <p>
-              We’re proud of our team of educators and our strong connection
-              with students and parents alike.
+              We&apos;re proud of our team of educators and our strong
+              connection with students and parents alike.
             </p>
           </div>
         </div>
@@ -95,14 +101,14 @@ export default function HomePage() {
 
       {/* Newsletter or School Gallery Section */}
       <section className="section school-updates">
-        <h2>What's Happening</h2>
+        <h2>What&apos;s Happening</h2>
         <div className="grid grid-2">
           <div className="info-card">
             <h3>📢 Daily Bulletin</h3>
             <p>
               Stay updated with our latest notices, student achievements, and
               classroom highlights. From exam schedules to event celebrations,
-              you’ll find it here.
+              you&apos;ll find it here.
             </p>
             <ul>
               <li>Science Exhibition – Aug 12</li>
@@ -111,13 +117,23 @@ export default function HomePage() {
             </ul>
           </div>
           <div className="school-photos">
-            <img src="/#" alt="School Campus" />
-            <img src="/teacher3.jpg" alt="School Event" />
+            <Image
+              src="/school-campus.jpg"
+              alt="School Campus"
+              width={400}
+              height={300}
+            />
+            <Image
+              src="/teacher3.jpg"
+              alt="School Event"
+              width={400}
+              height={300}
+            />
           </div>
         </div>
       </section>
 
-      {/* ✅ Updated Quick Access Section */}
+      {/* Quick Access Section */}
       <section className="section quick-access">
         <h2>Quick Access</h2>
         <div className="grid grid-2">

@@ -1,6 +1,7 @@
 "use client";
 
-import "./facilities.css"; // Ensure you create this file
+import "./facilities.css";
+import Image from "next/image";
 
 export default function FacilitiesPage() {
   const facilities = [
@@ -93,10 +94,12 @@ export default function FacilitiesPage() {
         <div className="grid grid-2">
           {facilities.map((facility, index) => (
             <div key={index} className="info-card">
-              <img
+              <Image
                 src={facility.image}
                 alt={facility.title}
                 className="facility-image"
+                width={400}
+                height={300}
               />
               <h3>{facility.title}</h3>
               <p>{facility.description}</p>
@@ -126,7 +129,7 @@ export default function FacilitiesPage() {
             <p>
               <strong>Laboratories</strong>
             </p>
-            <p>Science, Computer & Language</p>
+            <p>Science, Computer &amp; Language</p>
           </div>
           <div className="info-card highlight">
             <h3 className="highlight-number orange">2</h3>

@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import { FaPhone } from "react-icons/fa";
+import Image from "next/image"; // ✅ Use next/image
 
 export default function Header() {
   return (
@@ -7,9 +8,11 @@ export default function Header() {
       {/* Top Header Section */}
       <div className="header-top">
         <div className="header-left">
-          <img
+          <Image
             src="/logo.png"
             alt="Late R.K. Vidyamandir Logo"
+            width={80}
+            height={80}
             className="site-logo"
           />
           <div className="header-info">
