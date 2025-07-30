@@ -90,154 +90,136 @@ export default function GalleryPage() {
     <div className="container">
       <section className="section">
         <h2>School Gallery</h2>
-        <p
-          style={{
-            textAlign: "center",
-            maxWidth: "800px",
-            margin: "0 auto",
-            fontSize: "1.1rem",
-            color: "#666",
-          }}
-        >
+        <p className="section-subtext">
           Take a visual journey through our vibrant school life. These images
           capture the essence of learning, growth, and memorable moments at Late
           R. K. Vidyamandir.
         </p>
       </section>
 
-      {/* Image Categories */}
-      <section
-        className="section"
-        style={{ background: "white", padding: "60px 20px", margin: "40px 0" }}
-      >
+      <section className="section white-bg">
         <h2>Our School Life</h2>
         <div className="grid grid-4">
-          <div className="info-card" style={{ textAlign: "center" }}>
-            <h3>📚 Academic</h3>
-            <p>Classroom activities, laboratories, and learning sessions</p>
-          </div>
-          <div className="info-card" style={{ textAlign: "center" }}>
-            <h3>🏃‍♂️ Sports</h3>
-            <p>Sports events, physical activities, and competitions</p>
-          </div>
-          <div className="info-card" style={{ textAlign: "center" }}>
-            <h3>🎭 Cultural</h3>
-            <p>Cultural programs, festivals, and artistic performances</p>
-          </div>
-          <div className="info-card" style={{ textAlign: "center" }}>
-            <h3>🏛️ Infrastructure</h3>
-            <p>Campus buildings, facilities, and learning spaces</p>
-          </div>
+          {[
+            {
+              icon: "📚",
+              label: "Academic",
+              desc: "Classroom activities, laboratories, and learning sessions",
+            },
+            {
+              icon: "🏃‍♂️",
+              label: "Sports",
+              desc: "Sports events, physical activities, and competitions",
+            },
+            {
+              icon: "🎭",
+              label: "Cultural",
+              desc: "Cultural programs, festivals, and artistic performances",
+            },
+            {
+              icon: "🏛️",
+              label: "Infrastructure",
+              desc: "Campus buildings, facilities, and learning spaces",
+            },
+          ].map((cat, idx) => (
+            <div
+              className="info-card"
+              key={idx}
+              style={{ textAlign: "center" }}
+            >
+              <h3>
+                {cat.icon} {cat.label}
+              </h3>
+              <p>{cat.desc}</p>
+            </div>
+          ))}
         </div>
       </section>
 
-      {/* Main Gallery Grid */}
       <section className="section">
         <div className="gallery-grid">
           {galleryItems.map((item, index) => (
             <div key={index} className="gallery-item">
               <img src={item.image} alt={item.title} />
               <div className="gallery-overlay">
-                <h3 style={{ marginBottom: "10px", fontSize: "1.2rem" }}>
-                  {item.title}
-                </h3>
-                <p style={{ fontSize: "0.95rem", opacity: "0.9" }}>
-                  {item.description}
-                </p>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
               </div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* School Achievements Display */}
-      <section
-        className="section"
-        style={{ background: "white", padding: "60px 20px", margin: "40px 0" }}
-      >
+      <section className="section white-bg">
         <h2>Achievement Highlights</h2>
         <div className="grid grid-3">
           <div className="info-card">
             <h3>🏆 Academic Excellence</h3>
             <p>
-              Our students consistently achieve outstanding results in board
-              examinations, with many securing top positions at district and
-              state levels.
+              Students consistently achieve top results in board exams and
+              competitions.
             </p>
           </div>
           <div className="info-card">
             <h3>🎨 Cultural Achievements</h3>
             <p>
-              Regular winners in inter-school cultural competitions including
-              dance, music, drama, and art competitions.
+              Winners in dance, music, drama, and inter-school cultural events.
             </p>
           </div>
           <div className="info-card">
             <h3>⚽ Sports Champions</h3>
-            <p>
-              Our sports teams have won numerous trophies in cricket, football,
-              volleyball, and athletics at regional levels.
-            </p>
+            <p>Multiple trophies in cricket, football, and athletic events.</p>
           </div>
         </div>
       </section>
 
-      {/* School Events Timeline */}
       <section className="section">
         <h2>Annual Events</h2>
         <div className="grid grid-2">
           <div className="info-card">
             <h3>🎓 Academic Events</h3>
-            <ul style={{ textAlign: "left", lineHeight: "2" }}>
+            <ul>
               <li>Annual Day Celebration</li>
               <li>Science Exhibition</li>
               <li>Mathematics Olympiad</li>
-              <li>English Elocution Competition</li>
+              <li>English Elocution</li>
               <li>Quiz Competitions</li>
               <li>Project Presentations</li>
             </ul>
           </div>
           <div className="info-card">
-            <h3>🎪 Cultural & Sports Events</h3>
-            <ul style={{ textAlign: "left", lineHeight: "2" }}>
+            <h3>🎪 Cultural &amp; Sports Events</h3>
+            <ul>
               <li>Annual Sports Day</li>
               <li>Independence Day Celebration</li>
               <li>Republic Day Program</li>
-              <li>Teacher's Day Special</li>
+              <li>Teacher&apos;s Day</li>
               <li>Diwali Celebration</li>
-              <li>Children's Day Fun</li>
+              <li>Children&apos;s Day</li>
             </ul>
           </div>
         </div>
       </section>
 
-      {/* Video Gallery Section */}
-      <section
-        className="section"
-        style={{ background: "white", padding: "60px 20px", margin: "40px 0" }}
-      >
+      <section className="section white-bg">
         <h2>Video Gallery</h2>
-        <div
-          className="info-card"
-          style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}
-        >
-          <p style={{ fontSize: "1.1rem", marginBottom: "20px" }}>
-            Experience our school's vibrant atmosphere through our video
-            collection featuring annual events, student performances, and daily
-            school activities.
+        <div className="info-card center-card">
+          <p>
+            Experience our school&apos;s vibrant atmosphere through our video
+            collection featuring annual events and student activities.
           </p>
-          <div className="grid grid-2" style={{ marginTop: "30px" }}>
+          <div className="grid grid-2 video-section">
             <div className="info-card">
               <h3>📹 Annual Day 2024</h3>
               <p>Highlights from our grand annual day celebration</p>
-              <a href="#" className="btn" style={{ marginTop: "15px" }}>
+              <a href="#" className="btn">
                 Watch Video
               </a>
             </div>
             <div className="info-card">
               <h3>🏃‍♂️ Sports Day 2024</h3>
               <p>Exciting moments from our annual sports competition</p>
-              <a href="#" className="btn" style={{ marginTop: "15px" }}>
+              <a href="#" className="btn">
                 Watch Video
               </a>
             </div>
@@ -245,16 +227,12 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      {/* Share & Connect */}
       <section className="section">
         <h2>Share Your Memories</h2>
-        <div
-          className="info-card"
-          style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}
-        >
-          <p style={{ fontSize: "1.1rem", marginBottom: "20px" }}>
-            Have photos or videos from school events? We'd love to feature them
-            in our gallery! Share your memorable moments with us.
+        <div className="info-card center-card">
+          <p>
+            Have photos or videos from school events? We&apos;d love to feature
+            them in our gallery! Share your memorable moments with us.
           </p>
           <a href="/contact" className="btn">
             Share Your Photos

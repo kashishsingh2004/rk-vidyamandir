@@ -12,8 +12,8 @@ export default function ContactPage() {
             color: "#666",
           }}
         >
-          We're here to help! Get in touch with Late R. K. Vidyamandir for any
-          inquiries, admission information, or feedback. We value your
+          We&apos;re here to help! Get in touch with Late R. K. Vidyamandir for
+          any inquiries, admission information, or feedback. We value your
           communication and will respond promptly.
         </p>
       </section>
@@ -120,7 +120,7 @@ export default function ContactPage() {
           </div>
 
           <div className="info-card">
-            <h3>🎓 Principal's Office</h3>
+            <h3>🎓 Principal&apos;s Office</h3>
             <div style={{ textAlign: "left", lineHeight: "2" }}>
               <p>
                 <strong>Monday - Friday:</strong> 9:00 AM - 3:00 PM
@@ -147,7 +147,7 @@ export default function ContactPage() {
         <h2>Send Us a Message</h2>
         <div className="form-container">
           <h3 style={{ textAlign: "center", marginBottom: "30px" }}>
-            We'd Love to Hear From You
+            We&apos;d Love to Hear From You
           </h3>
           <form>
             <div className="grid grid-2">
@@ -190,7 +190,7 @@ export default function ContactPage() {
             </div>
 
             <div className="form-group">
-              <label>Student's Name (if applicable)</label>
+              <label>Student&apos;s Name (if applicable)</label>
               <input type="text" placeholder="Enter student's name and class" />
             </div>
 
@@ -469,7 +469,7 @@ export default function ContactPage() {
             <h3>🏫 During Your Visit</h3>
             <ul style={{ textAlign: "left", lineHeight: "2" }}>
               <li>Register at the reception desk</li>
-              <li>Wear visitor's badge</li>
+              <li>Wear visitor&apos;s badge</li>
               <li>Follow school guidelines</li>
               <li>Respect ongoing classes</li>
             </ul>

@@ -1,3 +1,7 @@
+"use client";
+
+import "./facilities.css"; // Ensure you create this file
+
 export default function FacilitiesPage() {
   const facilities = [
     {
@@ -75,54 +79,31 @@ export default function FacilitiesPage() {
   ];
 
   return (
-    <div className="container">
+    <div className="facilities-container">
       <section className="section">
         <h2>Our Modern Facilities</h2>
-        <p
-          style={{
-            textAlign: "center",
-            maxWidth: "800px",
-            margin: "0 auto",
-            fontSize: "1.1rem",
-            color: "#666",
-          }}
-        >
+        <p className="section-intro">
           Late R. K. Vidyamandir is equipped with modern facilities and
           infrastructure that provide an ideal environment for learning, growth,
           and overall development of our students.
         </p>
       </section>
 
-      {/* Main Facilities Grid */}
       <section className="section">
         <div className="grid grid-2">
           {facilities.map((facility, index) => (
-            <div
-              key={index}
-              className="info-card"
-              style={{ overflow: "hidden" }}
-            >
+            <div key={index} className="info-card">
               <img
                 src={facility.image}
                 alt={facility.title}
-                style={{
-                  width: "100%",
-                  height: "200px",
-                  objectFit: "cover",
-                  borderRadius: "8px",
-                  marginBottom: "20px",
-                }}
+                className="facility-image"
               />
               <h3>{facility.title}</h3>
-              <p style={{ marginBottom: "20px" }}>{facility.description}</p>
-              <h4 style={{ color: "#3498db", marginBottom: "10px" }}>
-                Key Features:
-              </h4>
-              <ul style={{ textAlign: "left", color: "#666" }}>
+              <p>{facility.description}</p>
+              <h4 className="features-heading">Key Features:</h4>
+              <ul className="features-list">
                 {facility.features.map((feature, idx) => (
-                  <li key={idx} style={{ marginBottom: "5px" }}>
-                    ✓ {feature}
-                  </li>
+                  <li key={idx}>✓ {feature}</li>
                 ))}
               </ul>
             </div>
@@ -130,68 +111,32 @@ export default function FacilitiesPage() {
         </div>
       </section>
 
-      {/* Infrastructure Highlights */}
-      <section
-        className="section"
-        style={{ background: "white", padding: "60px 20px", margin: "40px 0" }}
-      >
+      <section className="section white-bg">
         <h2>Infrastructure Highlights</h2>
-        <div className="grid grid-4">
-          <div className="info-card" style={{ textAlign: "center" }}>
-            <h3
-              style={{
-                color: "#3498db",
-                fontSize: "2.5rem",
-                marginBottom: "10px",
-              }}
-            >
-              15+
-            </h3>
+        <div className="grid grid-4 center-text">
+          <div className="info-card highlight">
+            <h3 className="highlight-number blue">15+</h3>
             <p>
               <strong>Classrooms</strong>
             </p>
             <p>Spacious and well-ventilated</p>
           </div>
-          <div className="info-card" style={{ textAlign: "center" }}>
-            <h3
-              style={{
-                color: "#e74c3c",
-                fontSize: "2.5rem",
-                marginBottom: "10px",
-              }}
-            >
-              3
-            </h3>
+          <div className="info-card highlight">
+            <h3 className="highlight-number red">3</h3>
             <p>
               <strong>Laboratories</strong>
             </p>
             <p>Science, Computer & Language</p>
           </div>
-          <div className="info-card" style={{ textAlign: "center" }}>
-            <h3
-              style={{
-                color: "#f39c12",
-                fontSize: "2.5rem",
-                marginBottom: "10px",
-              }}
-            >
-              2
-            </h3>
+          <div className="info-card highlight">
+            <h3 className="highlight-number orange">2</h3>
             <p>
               <strong>Playgrounds</strong>
             </p>
             <p>For various sports activities</p>
           </div>
-          <div className="info-card" style={{ textAlign: "center" }}>
-            <h3
-              style={{
-                color: "#27ae60",
-                fontSize: "2.5rem",
-                marginBottom: "10px",
-              }}
-            >
-              1
-            </h3>
+          <div className="info-card highlight">
+            <h3 className="highlight-number green">1</h3>
             <p>
               <strong>Auditorium</strong>
             </p>
@@ -200,74 +145,54 @@ export default function FacilitiesPage() {
         </div>
       </section>
 
-      {/* Additional Amenities */}
       <section className="section">
         <h2>Additional Amenities</h2>
         <div className="grid grid-3">
-          <div className="info-card">
-            <h3>🚌 Transportation</h3>
-            <p>
-              Safe and reliable bus service covering various routes in and
-              around Ruhellapur, ensuring comfortable commute for students.
-            </p>
-          </div>
-          <div className="info-card">
-            <h3>🍽️ Canteen</h3>
-            <p>
-              Hygienic canteen serving nutritious snacks and meals, maintaining
-              high standards of food quality and safety.
-            </p>
-          </div>
-          <div className="info-card">
-            <h3>🏥 Health Care</h3>
-            <p>
-              First aid facility with trained staff to handle medical
-              emergencies and regular health check-ups for students.
-            </p>
-          </div>
-          <div className="info-card">
-            <h3>🔒 Security</h3>
-            <p>
-              24/7 security system with CCTV surveillance, trained guards, and
-              controlled access to ensure student safety.
-            </p>
-          </div>
-          <div className="info-card">
-            <h3>💧 Clean Water</h3>
-            <p>
-              RO water purification system providing safe and clean drinking
-              water throughout the campus.
-            </p>
-          </div>
-          <div className="info-card">
-            <h3>⚡ Power Backup</h3>
-            <p>
-              Uninterrupted power supply with generator backup ensuring
-              continuous operation of all facilities.
-            </p>
-          </div>
+          {[
+            {
+              title: "🚌 Transportation",
+              text: "Safe and reliable bus service covering various routes in and around Ruhellapur.",
+            },
+            {
+              title: "🍽️ Canteen",
+              text: "Hygienic canteen serving nutritious snacks and meals.",
+            },
+            {
+              title: "🏥 Health Care",
+              text: "First aid with trained staff and regular health check-ups.",
+            },
+            {
+              title: "🔒 Security",
+              text: "24/7 security with CCTV surveillance and trained guards.",
+            },
+            {
+              title: "💧 Clean Water",
+              text: "RO water purification throughout the campus.",
+            },
+            {
+              title: "⚡ Power Backup",
+              text: "Uninterrupted power supply with generator backup.",
+            },
+          ].map((item, idx) => (
+            <div key={idx} className="info-card">
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </div>
+          ))}
         </div>
       </section>
 
-      {/* Upcoming Developments */}
-      <section
-        className="section"
-        style={{ background: "white", padding: "60px 20px", margin: "40px 0" }}
-      >
+      <section className="section white-bg">
         <h2>Future Developments</h2>
-        <div
-          className="info-card"
-          style={{ maxWidth: "800px", margin: "0 auto" }}
-        >
+        <div className="info-card future-box">
           <h3>Expansion Plans</h3>
-          <p style={{ marginBottom: "20px" }}>
+          <p>
             We are continuously working to enhance our facilities and provide
-            even better learning environment for our students. Our upcoming
-            projects include:
+            even better learning environments. Our upcoming projects include:
           </p>
-          <ul style={{ textAlign: "left", lineHeight: "2" }}>
+          <ul className="features-list">
             <li>Construction of new academic block</li>
-            <li>Upgrade of existing computer laboratory</li>
+            <li>Upgrade of existing computer lab</li>
             <li>Installation of solar power system</li>
             <li>Development of botanical garden</li>
             <li>Construction of multi-purpose auditorium</li>
@@ -276,17 +201,12 @@ export default function FacilitiesPage() {
         </div>
       </section>
 
-      {/* Visit Us */}
       <section className="section">
         <h2>Visit Our Campus</h2>
-        <div
-          className="info-card"
-          style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}
-        >
-          <p style={{ fontSize: "1.1rem", marginBottom: "20px" }}>
+        <div className="info-card visit-box">
+          <p>
             We invite parents and students to visit our campus and experience
-            our facilities firsthand. Schedule a campus tour to see how we
-            provide the best learning environment for your child.
+            our facilities firsthand. Schedule a campus tour today.
           </p>
           <a href="/contact" className="btn">
             Schedule a Visit

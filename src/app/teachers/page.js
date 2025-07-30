@@ -58,9 +58,9 @@ export default function TeachersPage() {
           }}
         >
           Our experienced and passionate teachers are the backbone of our
-          educational excellence. They are committed to nurturing each student's
-          potential and providing personalized attention to ensure comprehensive
-          development.
+          educational excellence. They are committed to nurturing each
+          student&apos;s potential and providing personalized attention to
+          ensure comprehensive development.
         </p>
       </section>
 
@@ -69,12 +69,12 @@ export default function TeachersPage() {
         className="section"
         style={{ background: "white", padding: "60px 20px", margin: "40px 0" }}
       >
-        <h2>Principal's Message</h2>
+        <h2>Principal&apos;s Message</h2>
         <div className="grid grid-2" style={{ alignItems: "center" }}>
           <div className="teacher-card">
             <img
               src="/teacher1.jpg"
-              alt="Chand Sir"
+              alt="Principal Chand Sir"
               className="teacher-image"
             />
             <div className="teacher-info">
@@ -88,17 +88,17 @@ export default function TeachersPage() {
           <div className="info-card">
             <h3>A Message from Our Principal</h3>
             <p>
-              "Welcome to Late R. K. Vidyamandir! For over two decades, we have
-              been committed to providing quality education that shapes not just
-              academic minds but builds character and values. Our dedicated
-              faculty works tirelessly to ensure that every student reaches
-              their full potential."
+              &quot;Welcome to Late Ramkali Vidya Mandir Junior High School! For
+              over two decades, we have been committed to providing quality
+              education that shapes not just academic minds but builds character
+              and values. Our dedicated faculty works tirelessly to ensure that
+              every student reaches their full potential.&quot;
             </p>
             <p>
-              "We believe in creating an environment where learning is joyful,
-              meaningful, and relevant to real life. Our goal is to prepare
-              students who are not only academically strong but also socially
-              responsible citizens."
+              &quot;We believe in creating an environment where learning is
+              joyful, meaningful, and relevant to real life. Our goal is to
+              prepare students who are not only academically strong but also
+              socially responsible citizens.&quot;
             </p>
           </div>
         </div>
@@ -141,8 +141,8 @@ export default function TeachersPage() {
             <h3>🎯 Student-Centered Learning</h3>
             <p>
               We focus on individual learning styles and adapt our teaching
-              methods to suit each student's needs, ensuring that no child is
-              left behind.
+              methods to suit each student&apos;s needs, ensuring that no child
+              is left behind.
             </p>
           </div>
           <div className="info-card">
@@ -169,7 +169,7 @@ export default function TeachersPage() {
         <h2>Faculty Achievements</h2>
         <div className="grid grid-2">
           <div className="info-card">
-            <h3>Recognition & Awards</h3>
+            <h3>Recognition &amp; Awards</h3>
             <ul style={{ textAlign: "left", lineHeight: "2" }}>
               <li>Best Teacher Awards at district level</li>
               <li>Recognition for innovative teaching methods</li>

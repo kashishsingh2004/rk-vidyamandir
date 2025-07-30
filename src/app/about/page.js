@@ -1,3 +1,7 @@
+// src/app/about/page.js
+
+import "./about.css";
+
 export default function AboutPage() {
   return (
     <div className="container">
@@ -40,10 +44,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section
-        className="section"
-        style={{ background: "white", padding: "60px 20px", margin: "40px 0" }}
-      >
+      <section className="section section-white">
         <h2>Our Philosophy</h2>
 
         <div className="grid grid-3">
@@ -83,7 +84,7 @@ export default function AboutPage() {
         <div className="grid grid-2">
           <div className="info-card">
             <h3>Academic Success</h3>
-            <ul style={{ textAlign: "left", lineHeight: "2" }}>
+            <ul>
               <li>Consistent 95%+ pass rates in board examinations</li>
               <li>Multiple district and state-level academic achievers</li>
               <li>Recognition from educational authorities</li>
@@ -93,7 +94,7 @@ export default function AboutPage() {
 
           <div className="info-card">
             <h3>Extracurricular Excellence</h3>
-            <ul style={{ textAlign: "left", lineHeight: "2" }}>
+            <ul>
               <li>Winners in inter-school sports competitions</li>
               <li>Cultural program winners at district level</li>
               <li>Active participation in community events</li>
@@ -103,28 +104,18 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section
-        className="section"
-        style={{ background: "white", padding: "60px 20px", margin: "40px 0" }}
-      >
+      <section className="section section-white">
         <h2>Our Commitment</h2>
 
-        <div
-          className="info-card"
-          style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}
-        >
-          <p
-            style={{ fontSize: "1.2rem", lineHeight: "1.8", color: "#2c3e50" }}
-          >
-            "We are committed to providing an environment where every child can
-            discover their potential and develop into confident, responsible,
-            and successful individuals. Our dedicated faculty, modern
-            facilities, and comprehensive curriculum ensure that our students
-            are well-prepared for the challenges of tomorrow."
+        <div className="info-card commitment">
+          <p>
+            &quot;We are committed to providing an environment where every child
+            can discover their potential and develop into confident,
+            responsible, and successful individuals. Our dedicated faculty,
+            modern facilities, and comprehensive curriculum ensure that our
+            students are well-prepared for the challenges of tomorrow.&quot;
           </p>
-          <p style={{ marginTop: "20px", fontStyle: "italic", color: "#666" }}>
-            - Chand Sir, Founder & Principal
-          </p>
+          <p className="quote-author">- Chand Sir, Founder &amp; Principal</p>
         </div>
       </section>
     </div>

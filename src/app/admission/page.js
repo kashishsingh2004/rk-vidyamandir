@@ -1,4 +1,3 @@
-// src/app/admission/page.js
 import "./page.module.css";
 
 export default function AdmissionPage() {
@@ -100,11 +99,11 @@ export default function AdmissionPage() {
                 </select>
               </div>
               <div className="form-group">
-                <label htmlFor="fatherName">Father's Name*</label>
+                <label htmlFor="fatherName">Father&apos;s Name*</label>
                 <input type="text" id="fatherName" name="fatherName" required />
               </div>
               <div className="form-group">
-                <label htmlFor="motherName">Mother's Name*</label>
+                <label htmlFor="motherName">Mother&apos;s Name*</label>
                 <input type="text" id="motherName" name="motherName" required />
               </div>
               <div className="form-group">
