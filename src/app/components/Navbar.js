@@ -1,64 +1,75 @@
 "use client";
 import Link from "next/link";
-import "./navbar.css";
 import {
   FaFacebookF,
   FaInstagram,
   FaTwitter,
   FaLinkedinIn,
   FaYoutube,
+  FaPhone,
 } from "react-icons/fa";
 
 export default function Navbar() {
   return (
     <nav className="navbar">
-      <div className="nav-logo">RK Vidyamandir</div>
-
-      <div className="nav-center">
+      <div className="nav-container">
         <ul className="nav-links">
           <li>
-            <Link href="/">Home</Link>
+            <Link href="/" className="nav-link">
+              Home
+            </Link>
+          </li>
+          <li className="dropdown">
+            <Link href="/academics" className="nav-link">
+              Academics ▾
+            </Link>
+          </li>
+          <li className="dropdown">
+            <Link href="/administration" className="nav-link">
+              Administration ▾
+            </Link>
           </li>
           <li>
-            <Link href="/about">About</Link>
+            <Link href="/admission" className="nav-link">
+              Online Admission
+            </Link>
           </li>
           <li>
-            <Link href="/admission">Admission</Link>
+            <Link href="/exam-result" className="nav-link">
+              Exam Result
+            </Link>
           </li>
           <li>
-            <Link href="/facilities">Facilities</Link>
+            <Link href="/fee-structure" className="nav-link">
+              FEE STRUCTURE
+            </Link>
           </li>
           <li>
-            <Link href="/gallery">Gallery</Link>
+            <Link href="/about" className="nav-link">
+              About Us
+            </Link>
           </li>
           <li>
-            <Link href="/notices">Notices</Link>
+            <Link href="/events" className="nav-link">
+              Events
+            </Link>
           </li>
           <li>
-            <Link href="/teachers">Teachers</Link>
+            <Link href="/gallery" className="nav-link">
+              Gallery
+            </Link>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <Link href="/complain" className="nav-link">
+              Complain
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact" className="nav-link">
+              Contact Us
+            </Link>
           </li>
         </ul>
-
-        <div className="nav-social">
-          <a href="https://facebook.com" target="_blank">
-            <FaFacebookF />
-          </a>
-          <a href="https://instagram.com" target="_blank">
-            <FaInstagram />
-          </a>
-          <a href="https://twitter.com" target="_blank">
-            <FaTwitter />
-          </a>
-          <a href="https://linkedin.com" target="_blank">
-            <FaLinkedinIn />
-          </a>
-          <a href="https://youtube.com" target="_blank">
-            <FaYoutube />
-          </a>
-        </div>
       </div>
     </nav>
   );

@@ -1,5 +1,5 @@
+// app/layout.js
 import "./globals.css";
-import Link from "next/link";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -20,23 +20,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <Header />
-
-        {/* Mobile Responsive Navigation */}
-        <nav className="nav-scroll">
-          <div className="nav-container">
-            <Link href="/">Home</Link>
-            <Link href="/about">About</Link>
-            <Link href="/teachers">Teachers</Link>
-            <Link href="/facilities">Facilities</Link>
-            <Link href="/gallery">Gallery</Link>
-            <Link href="/admission">Admission</Link>
-            <Link href="/results">Results</Link>
-            <Link href="/notices">Notices</Link>
-            <Link href="/contact">Contact</Link>
-          </div>
-        </nav>
-
-        <main>{children}</main>
+        <main className="main">{children}</main>
         <Footer />
       </body>
     </html>
