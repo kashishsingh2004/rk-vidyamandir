@@ -1,3 +1,4 @@
+import "./page.module.css"
 export default function TeachersPage() {
   const teachers = [
     {
