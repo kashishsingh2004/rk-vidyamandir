@@ -115,7 +115,7 @@ export default function AboutPage() {
             modern facilities, and comprehensive curriculum ensure that our
             students are well-prepared for the challenges of tomorrow.&quot;
           </p>
-          <p className="quote-author">- Chand Sir, Founder &amp; Principal</p>
+          <p className="quote-author">- Chand Sir, Founder &amp; Director</p>
         </div>
       </section>
     </div>

@@ -118,14 +118,14 @@ export default function FacilitiesPage() {
         <h2>Infrastructure Highlights</h2>
         <div className="grid grid-4 center-text">
           <div className="info-card highlight">
-            <h3 className="highlight-number blue">15+</h3>
+            <h3 className="highlight-number blue">9+</h3>
             <p>
               <strong>Classrooms</strong>
             </p>
             <p>Spacious and well-ventilated</p>
           </div>
           <div className="info-card highlight">
-            <h3 className="highlight-number red">3</h3>
+            <h3 className="highlight-number red">1</h3>
             <p>
               <strong>Laboratories</strong>
             </p>
@@ -141,7 +141,7 @@ export default function FacilitiesPage() {
           <div className="info-card highlight">
             <h3 className="highlight-number green">1</h3>
             <p>
-              <strong>Auditorium</strong>
+              <strong> Open-Auditorium</strong>
             </p>
             <p>For events and assemblies</p>
           </div>

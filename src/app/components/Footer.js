@@ -10,9 +10,9 @@ export default function Footer() {
             <h3 style={{ marginBottom: "15px", color: "#fff" }}>
               Contact Info
             </h3>
-            <p>📍 Ruhellapur, District Name</p>
-            <p>📞 +91-XXXXXXXXXX</p>
-            <p>✉️ rkvidyamandir@email.com</p>
+            <p>📍 Ruhellapur, Khaga,Fatehpur 212655</p>
+            <p>📞 +91-8009337704</p>
+            <p>✉️ lateramkalivi@gmail.com</p>
           </div>
           <div>
             <h3 style={{ marginBottom: "15px", color: "#fff" }}>Quick Links</h3>

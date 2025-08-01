@@ -92,10 +92,6 @@ export default function AdmissionPage() {
                   <option value="6">Class 6</option>
                   <option value="7">Class 7</option>
                   <option value="8">Class 8</option>
-                  <option value="9">Class 9</option>
-                  <option value="10">Class 10</option>
-                  <option value="11">Class 11</option>
-                  <option value="12">Class 12</option>
                 </select>
               </div>
               <div className="form-group">
@@ -147,11 +143,9 @@ export default function AdmissionPage() {
             <div className="info-card">
               <h3>Required Documents</h3>
               <ul>
-                <li>Birth Certificate</li>
                 <li>Previous School TC</li>
                 <li>Aadhar Card Copy</li>
                 <li>Passport Size Photos</li>
-                <li>Medical Certificate</li>
               </ul>
             </div>
             <div className="info-card">
@@ -198,10 +192,10 @@ export default function AdmissionPage() {
           <h2 className="section-title">Contact Admission Office</h2>
           <div className="contact-info">
             <div className="contact-item">
-              <strong>Phone:</strong> +91 12345 67890
+              <strong>Phone:</strong> +91-8009337704
             </div>
             <div className="contact-item">
-              <strong>Email:</strong> admissions@school.edu.in
+              <strong>Email:</strong> lateramkalivi@gmail.com
             </div>
             <div className="contact-item">
               <strong>Office Hours:</strong> Monday to Friday, 9:00 AM - 4:00 PM

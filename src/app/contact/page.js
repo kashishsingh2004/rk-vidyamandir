@@ -40,9 +40,9 @@ export default function ContactPage() {
               <strong>Late R. K. Vidyamandir</strong>
             </p>
             <p>Ruhellapur</p>
-            <p>District: [Fatehpur]</p>
-            <p>State: [Uttar pradesh]</p>
-            <p>PIN: [212655]</p>
+            <p>District: Fatehpur</p>
+            <p>State: Uttar pradesh</p>
+            <p>PIN: 212655</p>
           </div>
 
           <div className="info-card" style={{ textAlign: "center" }}>
@@ -82,7 +82,7 @@ export default function ContactPage() {
             </h3>
             <h4>Email Us</h4>
             <p>
-              <strong>General:</strong> info@rkvidyamandir.edu
+              <strong>General:</strong> lateramkalivi@gmail.com
             </p>
             <p>
               <strong>Admission:</strong> admission@rkvidyamandir.edu
@@ -246,7 +246,11 @@ export default function ContactPage() {
             <h3 style={{ color: "#FF0000" }}>📺</h3>
             <h4>YouTube</h4>
             <p>Watch school events</p>
-            <a href="#" className="btn" style={{ marginTop: "10px" }}>
+            <a
+              href="http://www.youtube.com/@chandsir5588"
+              className="btn"
+              style={{ marginTop: "10px" }}
+            >
               Subscribe
             </a>
           </div>
